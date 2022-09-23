@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Document</title>
+
+    <!-- Font Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- My Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <h1>Hello World</h1>
+
+    <!-- Header -->
+    <div class="mobile-nav">
+        <div class="header-overlay"></div>
+        <div class="mobile-content">
+            <div class="mobile-header"> 
+                <div class="close-menu">
+                    <span></span>
+                </div>
+            </div>
+            <div class="body-menu">
+                <ul>
+                    <li class="active">
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <ul class="nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <a href="#" class="hamburger">
+                <span></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <div id="hero">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-6 left">
+                    <h1>I'm Dashdizade Ferhad</h1>
+                    <h3>Frontend Developer</h3>
+                    <p>
+                        You will begin to realise why this exercise is called the Dickens Pattern with reference to the
+                        ghost
+                        showing Scrooge some different futures.
+                    </p>
+                    <div class="d-flex flex-wrap">
+                        <a class="button" href="#">Read More</a>
+                        <a class="button-light" href="#"><i class="fa-solid fa-user"></i> Contact me</a>
+                    </div>
+                </div>
+                <div class="col-4 right">
+                    <img class="img-fluid" src="assets/images/hero-profile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <img class="img-fluid" src="assets/images/about.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="assets/js/index.js"></script>
 </body>
+
 </html>
