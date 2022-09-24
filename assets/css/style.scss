@@ -338,6 +338,69 @@ header {
   }
 }
 
+#about{
+  background-color: $bg-gray;
+  .row{
+    position: relative;
+    .content{
+      position: absolute;
+      padding: 30px;
+      width: 50%;
+      top: 5%;
+      right: 0;
+      background-color: rgba(255,255,255,0.8) ;
+      h2{
+        font-weight: 700;
+        position: relative;
+        text-transform: uppercase;
+        display: inline-block;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          left: 0;
+          bottom: 0;
+          background: $linear;
+          transition: 0.3s ease-in-out;
+        }
+      }
+      .me{
+        padding: 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .name{
+          width: 40%;
+          text-align: center;
+          span{
+            text-align: center;
+            color: $purple;
+            font-weight: 600;
+          }
+          p{
+            font-weight: 600;
+          }
+          a{
+            color: $primary;
+            transition: .3s ease-in-out;
+            &:hover{
+              color: $purple;
+              text-decoration: underline;
+            }
+          }
+        }
+        .name:nth-last-child(1){
+          margin: auto;
+          width: 100%;
+          p{
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   #hero {
     .right {
@@ -353,6 +416,15 @@ header {
   #hero {
     .right {
       height: 16rem;
+    }
+   
+  }
+  #about{
+    .row{
+      .content{
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
