@@ -507,7 +507,7 @@ header .hamburger.active::after {
   position: relative;
   margin: 30px 0;
   background: #f3f3f3;
-  padding: 60px;
+  padding: 30px;
   box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
 }
 #testimonial .swiper .swiper-wrapper .swiper-slide .quote {
@@ -515,15 +515,86 @@ header .hamburger.active::after {
   top: -10%;
   left: 10%;
 }
+#testimonial .swiper .swiper-wrapper .swiper-slide .author {
+  margin-top: 20px;
+}
 #testimonial .swiper .swiper-wrapper .swiper-slide .author .name {
-  margin-top: 30px;
+  margin-left: 30px;
 }
 #testimonial .swiper .swiper-wrapper .swiper-slide .author .name h5 {
   font-weight: 700;
   text-transform: uppercase;
 }
+#testimonial .swiper .swiper-wrapper .swiper-slide .author .name p {
+  margin: 0;
+}
 #testimonial .swiper .swiper-pagination {
   display: none;
+}
+
+footer {
+  padding: 70px 0;
+  background: #f3f3f3;
+}
+footer .head {
+  text-align: start;
+}
+footer .address {
+  margin-top: 30px;
+}
+footer .address address {
+  margin-bottom: 0;
+}
+footer .address a {
+  color: #272525;
+  transition: 0.3s ease-in-out;
+  display: block;
+}
+footer .address a:hover {
+  color: #9b4edb;
+  text-decoration: underline;
+}
+footer .social {
+  margin-top: 20px;
+}
+footer .social span {
+  font-weight: 700;
+}
+footer .social a {
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+footer .social a:hover {
+  background: linear-gradient(to right, #d824ff 0%, #73c6f0 100%);
+}
+footer .social a:hover i {
+  color: #ffffff;
+}
+footer .social a:nth-child(2) {
+  padding: 10px 13px;
+}
+footer form input {
+  border: none;
+  border-bottom: 1px solid #595959;
+  outline: none;
+  background: transparent;
+}
+footer form input + input {
+  margin-left: 20px;
+}
+footer form textarea {
+  margin-top: 40px;
+  border: none;
+  border-bottom: 1px solid #595959;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+footer form button {
+  position: relative;
+  border: transparent;
 }
 
 @media (max-width: 1200px) {
@@ -541,6 +612,10 @@ header .hamburger.active::after {
   #about .row .content {
     width: 100%;
     height: 100%;
+  }
+  footer form input + input {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -569,6 +644,9 @@ header .button-nav {
   }
   #hero .right {
     height: 12rem;
+  }
+  footer {
+    padding: 30px 0;
   }
 }
 @media (max-width: 576px) {
