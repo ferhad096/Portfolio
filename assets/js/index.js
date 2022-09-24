@@ -21,3 +21,29 @@ closeMenu.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   mobileNav.classList.toggle("active");
 });
+
+
+
+// Swiper //
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});

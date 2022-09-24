@@ -26,6 +26,28 @@ section {
   padding: 70px 0;
 }
 
+.head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #d824ff 0%, #73c6f0 100%);
+  transition: 0.3s ease-in-out;
+}
+
 .button {
   position: relative;
   padding: 15px 25px;
@@ -334,22 +356,6 @@ header .hamburger.active::after {
   right: 0;
   background-color: rgba(255, 255, 255, 0.8);
 }
-#about .row .content h2 {
-  font-weight: 700;
-  position: relative;
-  text-transform: uppercase;
-  display: inline-block;
-}
-#about .row .content h2::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: 0;
-  background: linear-gradient(to right, #d824ff 0%, #73c6f0 100%);
-  transition: 0.3s ease-in-out;
-}
 #about .row .content .me {
   padding: 40px;
   flex-wrap: wrap;
@@ -382,6 +388,143 @@ header .hamburger.active::after {
 #about .row .content .me .name:nth-last-child(1) p {
   margin: 0;
 }
+#about .row .content .social {
+  text-align: center;
+}
+#about .row .content .social a {
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+#about .row .content .social a:hover {
+  background: linear-gradient(to right, #d824ff 0%, #73c6f0 100%);
+}
+#about .row .content .social a:hover i {
+  color: #ffffff;
+}
+#about .row .content .social a:nth-child(1) {
+  padding: 10px 13px;
+}
+
+#services .box {
+  position: relative;
+  height: 200px;
+  margin-bottom: 30px;
+  padding: 30px;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+}
+#services .box .logo {
+  position: relative;
+}
+#services .box .logo i {
+  font-size: 40px;
+  background: linear-gradient(to right, #d824ff 0%, #73c6f0 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#services .box .logo::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  background: linear-gradient(to right, #d824ff 0%, #73c6f0 100%);
+  transition: 0.3s ease-in-out;
+}
+#services .box .logo::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  background: linear-gradient(to right, #d824ff 0%, #73c6f0 100%);
+  transition: 0.3s ease-in-out;
+}
+#services .box .content {
+  margin-left: 20px;
+}
+#services .box .content h4 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+#services .box:hover {
+  background: linear-gradient(to right, #d824ff 0%, #73c6f0 100%);
+}
+#services .box:hover .logo i {
+  color: #272525;
+  background: inherit;
+  -webkit-text-fill-color: inherit;
+}
+#services .box:hover .logo::before, #services .box:hover .logo::after {
+  background: #272525;
+}
+
+#portfolio .swiper .swiper-wrapper {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+#portfolio .swiper .swiper-wrapper:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+#portfolio .swiper .swiper-pagination {
+  position: static;
+  margin-top: 30px;
+}
+#portfolio .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 25px;
+  height: 25px;
+  background: #f3f3f3;
+  opacity: 1;
+  margin: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#portfolio .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background: linear-gradient(to right, #d824ff 0%, #73c6f0 100%);
+}
+
+#testimonial .head h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#testimonial .swiper .swiper-wrapper {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+#testimonial .swiper .swiper-wrapper:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+#testimonial .swiper .swiper-wrapper .swiper-slide {
+  position: relative;
+  margin: 30px 0;
+  background: #f3f3f3;
+  padding: 60px;
+  box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+}
+#testimonial .swiper .swiper-wrapper .swiper-slide .quote {
+  position: absolute;
+  top: -10%;
+  left: 10%;
+}
+#testimonial .swiper .swiper-wrapper .swiper-slide .author .name {
+  margin-top: 30px;
+}
+#testimonial .swiper .swiper-wrapper .swiper-slide .author .name h5 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#testimonial .swiper .swiper-pagination {
+  display: none;
+}
 
 @media (max-width: 1200px) {
   #hero .right {
@@ -403,6 +546,9 @@ header .hamburger.active::after {
 @media (max-width: 767px) {
   section {
     padding: 30px 0;
+  }
+  .head {
+    margin-bottom: 30px;
   }
   header {
     padding: 20px 0;
@@ -437,5 +583,8 @@ header .button-nav {
   }
   #hero .right {
     height: 8rem;
+  }
+  #about .row .content {
+    position: relative;
   }
 }/*# sourceMappingURL=style.css.map */

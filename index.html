@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- Font Nunito -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
@@ -23,10 +25,11 @@
 <body>
 
     <!-- Header -->
+    <!-- Mobile -->
     <div class="mobile-nav">
         <div class="header-overlay"></div>
         <div class="mobile-content">
-            <div class="mobile-header"> 
+            <div class="mobile-header">
                 <div class="close-menu">
                     <span></span>
                 </div>
@@ -52,6 +55,7 @@
             </div>
         </div>
     </div>
+    <!-- Big Header -->
     <header>
         <div class="container">
             <ul class="nav">
@@ -109,9 +113,13 @@
                     <img class="img-fluid" src="assets/images/about.png" alt="">
                 </div>
                 <div class="content">
-                    <h2>About me</h2>
-                    <p>For instance, whenever I go back to the guest house during the morning to copy out the contract, these gentlemen are always still sitting there eating their breakfasts. I ought to just try that with my boss; I'd get kicked out on the spot.</p>
-                    <p>But who knows, maybe that would be the best thing for me. He'd fall right off his desk! And it's a funny sort of business to be sitting up there at your desk, talking down at your subordinates.</p>
+                    <h2 class="title">About me</h2>
+                    <p>For instance, whenever I go back to the guest house during the morning to copy out the contract,
+                        these gentlemen are always still sitting there eating their breakfasts. I ought to just try that
+                        with my boss; I'd get kicked out on the spot.</p>
+                    <p>But who knows, maybe that would be the best thing for me. He'd fall right off his desk! And it's
+                        a funny sort of business to be sitting up there at your desk, talking down at your subordinates.
+                    </p>
                     <div class="me d-flex">
                         <div class="name">
                             <span>Name</span>
@@ -135,15 +143,182 @@
                             <p>Azerbaijan Technical University</p>
                         </div>
                     </div>
+                    <div class="social">
+                        <a target="_blank" href="https://www.facebook.com/Ferhad17/"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://github.com/ferhad096"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/ferhad-dashdizade/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- About -->
+    <section id="services">
+        <div class="container">
+            <div class="head">
+                <h2 class="title">Services</h2>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <div class="box">
+                        <div class="d-flex">
+                            <div class="logo">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Web Design</h4>
+                                <p>
+                                    “It is not because things are difficult that we do not dare; it is because we do not
+                                    dare that they are difficult.”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
 
 
+                </div>
+                <div class="col-lg-5">
+                    <div class="box">
+                        <div class="d-flex">
+                            <div class="logo">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Web Development</h4>
+                                <p>
+                                    If you are an entrepreneur, you know that your success cannot depend on the opinions
+                                    of others. Like the wind, opinions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="box">
+                        <div class="d-flex">
+                            <div class="logo">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                            </div>
+                            <div class="content">
+                                <h4>App Interface</h4>
+                                <p>
+                                    Do you sometimes have the feeling that you’re running into the same obstacles over
+                                    and over again? Many of my conflicts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="box">
+                        <div class="d-flex">
+                            <div class="logo">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Branding Identity</h4>
+                                <p>
+                                    Brought a to just try that with my boss; I'd get kicked out on the spot. But who's
+                                    knows maybe the better
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="head">
+                <h2 class="title">Portfolio</h2>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="img-fluid" src="assets/images/port1.png" alt=""></div>
+                    <div class="swiper-slide"><img class="img-fluid" src="assets/images/port2.png" alt=""></div>
+                    <div class="swiper-slide"><img class="img-fluid" src="assets/images/port3.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section id="testimonial">
+        <div class="container">
+            <div class="head">
+                <h2>Client’s Feedback About Me</h2>
+                <p>It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a
+                    person.</p>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="quote" src="assets/images/Quote.png" alt="">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                            live the blind texts.Far far away, behind the word mountains there live the blind texts.
+                        </p>
+                        <div class="author d-flex align-items-center ">
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/testi1.png" alt="">
+                            </div>
+                            <div class="name">
+                                <h5>jhon meel</h5>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="quote" src="assets/images/Quote.png" alt="">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                            live the blind texts.Far far away, behind the word mountains there live the blind texts.
+                        </p>
+                        <div class="author d-flex align-items-center ">
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/testi2.png" alt="">
+                            </div>
+                            <div class="name">
+                                <h5>jhon meel</h5>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="quote" src="assets/images/Quote.png" alt="">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                            live the blind texts.Far far away, behind the word mountains there live the blind texts.
+                        </p>
+                        <div class="author d-flex align-items-center ">
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/testi3.png" alt="">
+                            </div>
+                            <div class="name">
+                                <h5>jhon meel</h5>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        
+    </footer>
+
+    <!-- SwiperJs -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- My Js -->
     <script src="assets/js/index.js"></script>
 </body>
 
