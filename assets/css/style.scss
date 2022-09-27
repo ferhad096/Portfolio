@@ -29,6 +29,13 @@ h3 {
   font-weight: 600;
 }
 
+.scroll-down{
+  header{
+    transform: translateY(-100%);
+  }
+}
+
+
 section {
   padding: 70px 0;
 }
@@ -84,6 +91,8 @@ section {
 }
 
 header {
+  transition: .3s ease-in-out;
+  z-index: 99999;
   .nav {
     display: flex;
     a {
@@ -173,6 +182,11 @@ header {
       transform: rotate(-45deg);
     }
   }
+}
+header.fixed{
+  background: $white;
+  position: fixed;
+  width: 100%;
 }
 
 .mobile-nav {
@@ -649,7 +663,7 @@ footer{
     margin-bottom: 30px;
   }
   header {
-    padding: 20px 0;
+    padding: 10px 0;
     .nav,
     .button-nav {
       display: none !important;

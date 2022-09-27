@@ -22,6 +22,10 @@ h3 {
   font-weight: 600;
 }
 
+.scroll-down header {
+  transform: translateY(-100%);
+}
+
 section {
   padding: 70px 0;
 }
@@ -76,6 +80,10 @@ section {
   border: 2px solid #9b4edb;
 }
 
+header {
+  transition: 0.3s ease-in-out;
+  z-index: 99999;
+}
 header .nav {
   display: flex;
 }
@@ -160,6 +168,12 @@ header .hamburger.active::before {
 header .hamburger.active::after {
   top: 40%;
   transform: rotate(-45deg);
+}
+
+header.fixed {
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
 }
 
 .mobile-nav {
@@ -603,7 +617,7 @@ footer form button {
     margin-bottom: 30px;
   }
   header {
-    padding: 20px 0;
+    padding: 10px 0;
   }
   header .nav,
 header .button-nav {
