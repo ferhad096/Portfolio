@@ -53,24 +53,13 @@ section {
   padding: 15px 25px;
   color: #ffffff;
   transition: 0.3s ease-in-out;
-}
-.button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
   background: linear-gradient(to right, #d824ff 0%, #73c6f0 100%);
-  transition: 0.3s ease-in-out;
+  border: 2px solid #fff;
 }
 .button:hover {
   background: #ffffff;
   color: #272525;
-}
-.button:hover::before {
-  margin: -2px;
+  border: 2px solid #9b4edb;
 }
 
 .button-light {
@@ -79,25 +68,12 @@ section {
   color: #272525;
   background: #ffffff;
   transition: 0.3s ease-in-out;
-}
-.button-light:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 2px;
-  z-index: -1;
-  background: linear-gradient(to right, #d824ff 0%, #73c6f0 100%);
-  transition: 0.3s ease-in-out;
+  border: 2px solid #fff;
 }
 .button-light:hover {
   padding: 13px 24px;
   color: #272525;
-}
-.button-light:hover::before {
-  margin: -2px;
+  border: 2px solid #9b4edb;
 }
 
 header .nav {
@@ -585,6 +561,7 @@ footer form input + input {
   margin-left: 20px;
 }
 footer form textarea {
+  resize: none;
   margin-top: 40px;
   border: none;
   border-bottom: 1px solid #595959;

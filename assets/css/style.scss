@@ -59,23 +59,13 @@ section {
   padding: 15px 25px;
   color: $white;
   transition: 0.3s ease-in-out;
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background: $linear;
-    transition: 0.3s ease-in-out;
-  }
+  background: $linear;
+  border: 2px solid #fff;
+
   &:hover {
     background: $white;
     color: $primary;
-    &::before {
-      margin: -2px;
-    }
+    border: 2px solid $purple;
   }
 }
 .button-light {
@@ -84,24 +74,12 @@ section {
   color: $primary;
   background: $white;
   transition: 0.3s ease-in-out;
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 2px;
-    z-index: -1;
-    background: $linear;
-    transition: 0.3s ease-in-out;
-  }
+  border: 2px solid #fff;
   &:hover {
     padding: 13px 24px;
     color: $primary;
-    &::before {
-      margin: -2px;
-    }
+    border: 2px solid $purple;
+
   }
 }
 
@@ -613,6 +591,7 @@ footer{
       margin-left: 20px;
     }
     textarea{
+      resize: none;
       margin-top: 40px;
       border: none;
       border-bottom: 1px solid $gray;
